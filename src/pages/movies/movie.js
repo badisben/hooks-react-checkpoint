@@ -2,6 +2,7 @@
 import {useState} from "react";
 import Filter from '../../component/filter/filter';
 import MovieList from "../../component/movieliste/liste";
+import Navbar from "../../component/navbar/navbar";
 
 const moviesList = [
     {
@@ -131,11 +132,12 @@ const Movie = ()=> {
   const [movies, setMovies] = useState(moviesList)
   return (
     <>
-        
+          <Navbar/>
       
         <Filter movies={movies} setMovies={setMovies}  
         moviesList={moviesList}/>
         <MovieList moviesprops={movies}/>
+      
 
     
      </>

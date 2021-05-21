@@ -1,18 +1,21 @@
+import './register.css'
 import {Button, Card, TextField} from "@material-ui/core";
-import'./addmovies.css';
 
-const AddMovies = () => {
+const Register = () => {
     return (
         <div className={'register-container'}>
             <Card className={'register-card'}>
-                <h1>Add new movie</h1>
-                <TextField label="Title"
+                <h1>Inscription</h1>
+                <TextField label="Nom"
                            type="search"
                            variant="outlined"/>
-                <TextField label="Description"
+                <TextField label="Prénom"
                            type="search"
                            variant="outlined"/>
-                <TextField label="Rating"
+                <TextField label="Email"
+                           type="search"
+                           variant="outlined"/>
+                <TextField label="Mot de passe"
                            type="search"
                            variant="outlined"/>
                 <Button variant="contained" color="primary">
@@ -22,4 +25,4 @@ const AddMovies = () => {
         </div>
     )
 }
-export default AddMovies;
+export default Register
