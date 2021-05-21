@@ -3,9 +3,9 @@
     height:15rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: .5rem;
+    margin-top: 1rem;
+    margin-bottom:1rem;
 }
